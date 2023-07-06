@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [All Test Suite]">
+  <parameter name="url" value="https://www.saucedemo.com/"/>
+  <parameter name="browserType" value="chrome"/>
+  <test thread-count="5" name="/home/nthdiu/java/simpleTicket/src/testcases/LoginTestcase.java(failed)">
+    <classes>
+      <class name="testcases.CheckoutTC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyThatUserNeedEnterAllRequireField"/>
+          <include name="setUp"/>
+          <include name="VerifyThatUserCanCheckoutSuccessfully"/>
+          <include name="login"/>
+          <include name="preCondition"/>
+          <include name="initializeTestBaseSetup"/>
+        </methods>
+      </class> <!-- testcases.CheckoutTC -->
+      <class name="testcases.LoginTC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="loginToPage"/>
+          <include name="initializeTestBaseSetup"/>
+        </methods>
+      </class> <!-- testcases.LoginTC -->
+      <class name="testcases.HomeTC">
+        <methods>
+          <include name="addProductToCart"/>
+          <include name="login"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="removeProduct"/>
+          <include name="initializeTestBaseSetup"/>
+        </methods>
+      </class> <!-- testcases.HomeTC -->
+      <class name="testcases.CartTC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="login"/>
+          <include name="removeProductInCart"/>
+          <include name="initializeTestBaseSetup"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.CartTC -->
+    </classes>
+  </test> <!-- /home/nthdiu/java/simpleTicket/src/testcases/LoginTestcase.java(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="browserType" value="chrome"></parameter>
+    <parameter name="url" value="https://www.saucedemo.com/"></parameter>
+    <test verbose="2" preserve-order="true" name="/home/nthdiu/java/simpleTicket/src/testcases/LoginTestcase.java">
+        <classes>
+            <class name="testcases.LoginTC">
+                <methods>
+                    <include name="loginToPage"/>
+                </methods>
+            </class>
+            <class name="testcases.HomeTC">
+                <methods>
+                    <include name="login"/>
+                    <include name="addProductToCart"/>
+                    <include name="removeProduct"/>
+                </methods>
+            </class>
+            <class name="testcases.CartTC">
+                <methods>
+                    <include name="login"/>
+                    <include name="removeProductInCart"/>
+                </methods>
+            </class>
+
+            <class name="testcases.CheckoutTC">
+                <methods>
+                    <include name="login"/>
+                    <include name="preCondition"/>
+                    <include name="verifyThatUserNeedEnterAllRequireField"/>
+                    <include name="VerifyThatUserCanCheckoutSuccessfully"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
